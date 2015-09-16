@@ -1,0 +1,41 @@
+{
+  "name": "wormling/phparia-lyra",
+  "type": "library",
+  "minimum-stability": "dev",
+  "description": "Sangoma Lyra AMD extension for phparia.",
+  "keywords": ["asterisk", "ari", "ami", "client", "call", "rest", "telephony", "voip", "php", "amd"],
+  "homepage": "http://wormling.github.com/phparia-lyra",
+  "license": "Apache-2.0",
+  "authors": [
+    {
+      "name": "Brian Smith",
+      "email": "wormling@gmail.com",
+      "homepage": "http://wormling.github.com/",
+      "role": "Developer"
+    }
+  ],
+  "autoload": {
+    "psr-0": {
+      "phpariaLyra": "src/wormling",
+      "incenteev/composer-parameter-handler": "~2.0"
+    }
+  },
+  "extra": {
+    "incenteev-parameters": {
+      "file": "src/wormling/phpariaLyra/config.yml",
+      "parameter-key": "examples"
+    }
+  },
+  "require": {
+    "php": ">=5.4",
+    "wormling/phparia": ">=2.0"
+  },
+  "scripts": {
+    "post-install-cmd": [
+      "Incenteev\\ParameterHandler\\ScriptHandler::buildParameters"
+    ],
+    "post-update-cmd": [
+      "Incenteev\\ParameterHandler\\ScriptHandler::buildParameters"
+    ]
+  }
+}
