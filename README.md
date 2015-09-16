@@ -1,5 +1,7 @@
-phparia-lyra - [phparia](http://phparia.org) extension for [Sangoma Lyra Answering Machine Detection for Asterisk.](http://www.sangoma.com/products/answering-machine-detection-for-asterisk-sangoma-lyra)
+phparia-lyra
 ===
+
+[phparia](http://phparia.org) extension for [Sangoma Lyra Answering Machine Detection for Asterisk.](http://www.sangoma.com/products/answering-machine-detection-for-asterisk-sangoma-lyra)
 
 Features
 ---
